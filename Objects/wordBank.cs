@@ -9,7 +9,10 @@ namespace MadLibs
       public string Animal { get; set; }
       public string Exclamation { get; set; }
       public string Verb { get; set; }
+
+      public string Verb2 { get; set; }
       public string Noun { get; set; }
+      public string Animal2 { get; set; }
       public Dictionary<string, string> englishStuff;
 
       public wordBank()

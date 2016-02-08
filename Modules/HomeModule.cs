@@ -11,8 +11,10 @@ namespace MadLibs
       word.add( "Person1", "Person1");
       word.add( "Person2", "Person2");
       word.add( "Animal", "Animal");
+      word.add( "Animal2", "Animal2");
       word.add( "Exclamation", "Exclamation");
       word.add( "Verb", "Verb");
+      word.add( "Verb2", "Verb");
       word.add( "Noun", "Noun");
       Get["/form"] = _ => {
 
@@ -25,7 +27,9 @@ namespace MadLibs
         word.Animal = Request.Query["Animal"];
         word.Exclamation = Request.Query["Exclamation"];
         word.Verb = Request.Query["Verb"];
+        word.Verb2 = Request.Query["Verb2"];
         word.Noun = Request.Query["Noun"];
+        word.Animal2 = Request.Query["Animal2"];
         return View["madlib.html", word];
       };
     }
