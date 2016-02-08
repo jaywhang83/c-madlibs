@@ -1,0 +1,11 @@
+@Partial['header.html'];
+
+<form action="/madlib">
+  @Each.englishStuff
+    <div class='form-group'>
+      <label for='@Current.Key'>@Current.Value</label>
+      <input id='@Current.Key' name='@Current.Key' class='form-control' type='text'>
+    </div>
+  @EndEach
+  <input type="submit" name="submit" value="SUBMIT MADLIB">
+</form>

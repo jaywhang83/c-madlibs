@@ -3,7 +3,7 @@ using Microsoft.AspNet.Builder;
 using Nancy.Owin;
 using Nancy;
 
-namespace FriendLetter
+namespace MadLibs
 {
   public class Startup
   {
